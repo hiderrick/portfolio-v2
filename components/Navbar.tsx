@@ -18,7 +18,6 @@ export const Navbar: React.FC = () => {
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -29,7 +28,7 @@ export const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-12">
         <div className="flex justify-between items-center h-20">
-          <a href="#" className="flex items-center gap-2 group">
+          <a href={PERSONAL_INFO.resumeLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 group">
             <div className="bg-gradient-to-br from-primary to-secondary p-2 rounded-lg group-hover:rotate-3 transition-transform">
               <Code className="text-white w-6 h-6" />
             </div>
@@ -52,6 +51,8 @@ export const Navbar: React.FC = () => {
             ))}
             <a 
               href={PERSONAL_INFO.resumeLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-full text-sm font-medium transition-all border border-slate-900 hover:border-primary ml-4"
             >
               Resume
@@ -84,6 +85,8 @@ export const Navbar: React.FC = () => {
             ))}
              <a 
               href={PERSONAL_INFO.resumeLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full text-center mt-6 px-5 py-3 bg-primary hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
             >
               Resume

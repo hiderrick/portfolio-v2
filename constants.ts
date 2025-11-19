@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   tagline: "Building scalable solutions & exploring the future of tech.",
   email: "derrickchen0201@gmail.com",
   website: "derrickchen.org",
-  resumeLink: "#", // Placeholder
+  resumeLink: "/derrick_chen_resume.pdf",
 };
 
 export const SOCIAL_LINKS: SocialLink[] = [
@@ -58,9 +58,8 @@ export const EXPERIENCE: Experience[] = [
     date: "Summer 2026",
     description: [
       "Incoming intern for the Summer 2026 cohort",
-      "Preparing to contribute to high-scale retail technology solutions"
     ],
-    skills: ["Retail Tech", "Software Engineering"]
+    skills: ["something cool"]
   },
   {
     role: "Software Engineer Intern",
@@ -84,7 +83,7 @@ export const EXPERIENCE: Experience[] = [
       "Cleaned and analyzed datasets with 1M+ records for emergency response and public policy analysis",
       "Collaborated using Agile methodologies, partnering with Oak Ridge National Laboratory"
     ],
-    skills: ["Python", "Data Analysis", "Web Scraping", "Agile"]
+    skills: ["Python", "Pandas", "Matplotlib", "Data Analysis"]
   }
 ];
 
@@ -93,9 +92,9 @@ export const PROJECTS: Project[] = [
     name: "GT Notes",
     date: "July 2025 - Present",
     description: [
-      "Deployed a fullstack web app with 480+ users for students to share lecture notes.",
-      "Designed a PostgreSQL schema with Drizzle ORM and AWS S3 for file storage.",
-      "Implemented stateless session management using JWT and OAuth 2.0 (Google & Microsoft)."
+      "Deployed a fullstack web app with 480+ users for students to share lecture note.",
+      "Designed a PostgreSQL schema with Drizzle ORM and AWS S3 for file storage",
+      "Implemented stateless session management using JWT and OAuth 2.0 (Google & Microsoft)"
     ],
     stack: ["TypeScript", "React", "Node.js", "AWS", "PostgreSQL", "Drizzle ORM"],
     image: "https://picsum.photos/seed/gtnotes/600/400",
@@ -127,13 +126,13 @@ export const PROJECTS: Project[] = [
 ];
 
 export const AWARDS: Achievement[] = [
-  { title: "Coca-Cola First Generation Scholar", description: "Awarded for academic excellence and leadership." },
-  { title: "Zell Miller Scholarship Recipient", description: "Full tuition scholarship for high academic achievement." }
+  { title: "Coca-Cola First Generation Scholar", description: "One of 15 people chosen every year" },
+  { title: "Zell Miller Scholarship Recipient", description: "Full tuition scholarship" }
 ];
 
 export const EXTRACURRICULARS = [
+  "Greek Life (Director of Career Development)",
   "WebDev @ GT",
   "Intramural Sports",
-  "Blockchain @ GT",
-  "Greek Life (Director of Career Development)"
+  "Blockchain @ GT"
 ];

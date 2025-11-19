@@ -10,17 +10,17 @@ export const About: React.FC = () => {
         <div className="space-y-8">
           <div className="prose max-w-none">
             <p className="text-slate-600 text-lg leading-relaxed">
-              I am currently pursuing a Bachelor of Science in Computer Science at the <strong className="text-slate-900">Georgia Institute of Technology</strong>, expecting to graduate in May 2027.
+               Hi! I'm a current 3rd year CS student at <strong className="text-slate-900">Georgia Tech</strong>. I'm super interested in Cloud Computing and Backend Development. I'm expected to graduate in May 2027 and would love to connect for opportunities!
             </p>
             <p className="text-slate-600 text-lg leading-relaxed mt-4">
-              My passion lies in building software that solves real-world problems. I enjoy working across the stack, from designing efficient database schemas to crafting intuitive user interfaces.
+              Outside of class/work, I love watching sports (huge Hawks and Eagles fan), hiking, lifting, and sucking at golf.
             </p>
           </div>
 
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
             <div className="flex items-start gap-4">
               <div className="w-16 h-16 flex-shrink-0 p-1 bg-white rounded-lg flex items-center justify-center">
-                <img src="georgia-tech-logo.png" alt="Georgia Tech" className="w-full h-full object-contain" />
+                <img src="/georgia-tech-logo.png" alt="Georgia Tech" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-slate-900">{EDUCATION.school}</h3>
@@ -58,7 +58,7 @@ export const About: React.FC = () => {
             </div>
 
             <h3 className="text-xl font-semibold text-slate-900 flex items-center gap-2 mt-8">
-                <Users className="w-5 h-5 text-secondary" /> Involvement
+                <Users className="w-5 h-5 text-secondary" /> Campus Involvement
             </h3>
              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {EXTRACURRICULARS.map((item, idx) => (

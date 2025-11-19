@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
           <div className="relative w-32 h-32 md:w-40 md:h-40 animate-float">
             <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl transform translate-y-2"></div>
             <img 
-              src="headshot.png" 
+              src="/FloatingHead.png" 
               alt="Derrick Chen" 
               className="relative w-full h-full object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300"
             />
@@ -30,10 +30,10 @@ export const Hero: React.FC = () => {
           {PERSONAL_INFO.name}.
         </h1>
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-500 mb-8 leading-tight opacity-0 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
-          I build things for the web.
+          
         </h2>
         <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-          I'm a Computer Science student at <span className="text-primary font-semibold">Georgia Tech</span> specializing in full-stack development, cloud infrastructure, and scalable systems.
+          I like to build things that sometimes works on the first try
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12 opacity-0 animate-fade-in-up" style={{ animationDelay: '500ms' }}>
