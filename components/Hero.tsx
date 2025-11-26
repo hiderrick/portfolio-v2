@@ -11,15 +11,52 @@ export const Hero: React.FC = () => {
 
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         
-        {/* Headshot Image */}
+        {/* Headshot Image with Floating Icons */}
         <div className="flex justify-center mb-8 opacity-0 animate-fade-in-up">
-          <div className="relative w-32 h-32 md:w-40 md:h-40 animate-float">
+          <div className="relative w-32 h-32 md:w-40 md:h-40 animate-float hero-image-container">
             <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl transform translate-y-2"></div>
             <img 
               src="/FloatingHead.png" 
               alt="Derrick Chen" 
-              className="relative w-full h-full object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300"
+              className="relative w-full h-full object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300 floating-head"
             />
+            
+            {/* Individual Thought Bubbles for Each Icon */}
+            {/* Java Bubble */}
+            <div className="thought-bubble-container bubble-java">
+              <div className="thought-bubble-main">
+                <i className="devicon-java-plain colored"></i>
+              </div>
+              <div className="thought-dot dot-sm"></div>
+              <div className="thought-dot dot-md"></div>
+            </div>
+
+            {/* Python Bubble */}
+            <div className="thought-bubble-container bubble-python">
+              <div className="thought-bubble-main">
+                <i className="devicon-python-plain colored"></i>
+              </div>
+              <div className="thought-dot dot-sm"></div>
+              <div className="thought-dot dot-md"></div>
+            </div>
+
+            {/* React Bubble */}
+            <div className="thought-bubble-container bubble-react">
+              <div className="thought-bubble-main">
+                <i className="devicon-react-original colored"></i>
+              </div>
+              <div className="thought-dot dot-sm"></div>
+              <div className="thought-dot dot-md"></div>
+            </div>
+
+            {/* Node Bubble */}
+            <div className="thought-bubble-container bubble-node">
+              <div className="thought-bubble-main">
+                <i className="devicon-nodejs-plain colored"></i>
+              </div>
+              <div className="thought-dot dot-sm"></div>
+              <div className="thought-dot dot-md"></div>
+            </div>
           </div>
         </div>
 
