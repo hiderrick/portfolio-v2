@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script>
       tailwind.config = {
         darkMode: 'class',
@@ -53,6 +54,112 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #94a3b8; 
       }
+
+      /* Remove old floating icon styles if present */
+      .hero-image-container { position: relative; }
+      
+      @media (max-width: 768px) {
+        .floating-icon {
+          font-size: 1.5rem;
+        }
+        .floating-icon i {
+          font-size: 1.5rem;
+        }
+      }
+
+      /* Individual Thought Bubbles */
+      .thought-bubble-container {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        pointer-events: none;
+        z-index: 5;
+        opacity: 0;
+      }
+
+      .thought-bubble-main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        border: 2px solid #e2e8f0;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        animation: floatBubble 4s ease-in-out infinite;
+      }
+
+      .thought-dot {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.9);
+        border: 2px solid #e2e8f0;
+        border-radius: 50%;
+      }
+
+      /* Java Bubble (Top Right) */
+      .bubble-java {
+        top: -40%;
+        right: -30%;
+        animation: fadeIn 0.6s ease-out 0.2s forwards;
+      }
+      .bubble-java .thought-dot.dot-md { width: 12px; height: 12px; bottom: -5px; left: 10px; }
+      .bubble-java .thought-dot.dot-sm { width: 8px; height: 8px; bottom: -15px; left: -5px; }
+
+      /* Python Bubble (Top Left) */
+      .bubble-python {
+        top: -30%;
+        left: -30%;
+        animation: fadeIn 0.6s ease-out 0.4s forwards;
+      }
+      .bubble-python .thought-bubble-main { animation-delay: 1s; }
+      .bubble-python .thought-dot.dot-md { width: 12px; height: 12px; bottom: -5px; right: 10px; }
+      .bubble-python .thought-dot.dot-sm { width: 8px; height: 8px; bottom: -15px; right: -5px; }
+
+      /* React Bubble (Bottom Right) */
+      .bubble-react {
+        bottom: -20%;
+        right: -40%;
+        animation: fadeIn 0.6s ease-out 0.6s forwards;
+      }
+      .bubble-react .thought-bubble-main { animation-delay: 2s; }
+      .bubble-react .thought-dot.dot-md { width: 12px; height: 12px; top: 0px; left: 5px; }
+      .bubble-react .thought-dot.dot-sm { width: 8px; height: 8px; top: -10px; left: -10px; }
+
+      /* Node Bubble (Bottom Left) */
+      .bubble-node {
+        bottom: -10%;
+        left: -40%;
+        animation: fadeIn 0.6s ease-out 0.8s forwards;
+      }
+      .bubble-node .thought-bubble-main { animation-delay: 3s; }
+      .bubble-node .thought-dot.dot-md { width: 12px; height: 12px; top: 5px; right: 5px; }
+      .bubble-node .thought-dot.dot-sm { width: 8px; height: 8px; top: -5px; right: -10px; }
+
+      @keyframes floatBubble {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @media (min-width: 768px) {
+        .thought-bubble-container { width: 70px; height: 70px; }
+        .thought-bubble-main { font-size: 2.2rem; }
+        
+        .bubble-java { top: -30%; right: -40%; }
+        .bubble-python { top: -20%; left: -40%; }
+        .bubble-react { bottom: -10%; right: -50%; }
+        .bubble-node { bottom: 0%; left: -50%; }
+      }
+
     </style>
   <script type="importmap">
 {
