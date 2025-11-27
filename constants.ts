@@ -23,6 +23,7 @@ export const EDUCATION: Education = {
   coursework: [
     "Data Structures & Algorithms",
     "Object Oriented Programming",
+    "Design & Analysis of Algorithms",
     "Computer Architecture",
     "Operating Systems",
     "Database Design",
